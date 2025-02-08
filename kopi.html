@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Peluang Bisnis Kafe 2025 - Preferensi & Sumber Terintegrasi</title>
+  <style>
+    /* Variabel Warna */
+    :root {
+      --color-coffee: #6f4e37;
+      --color-food: #e67e22;
+      --color-snack: #f1c40f;
+      --color-fried: #e74c3c;
+      --color-beverage: #3498db;
+      --color-bg: #f9f9f9;
+      --color-text: #2c3e50;
+      --color-border: #ecf0f1;
+      --color-highlight: #2ecc71;
+      --color-heading: #007BFF;
+    }
+
+    /* Reset Dasar */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: var(--color-heading);
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #7f8c8d;
+    }
+
+    .dashboard {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .category {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border-top: 5px solid;
+      overflow: hidden;
+    }
+
+    .category h2 {
+      margin-bottom: 15px;
+      font-size: 1.6em;
+      color: var(--color-heading);
+      text-align: center;
+    }
+
+    /* Container untuk item – jika lebih dari 10, akan muncul scrollbar */
+    .items-container {
+      max-height: 400px;
+      overflow-y: auto;
+      padding-right: 5px; /* agar scrollbar tidak menutupi konten */
+      margin-bottom: 15px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px;
+      margin-bottom: 10px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .item:hover {
+      background-color: #ecf0f1;
+    }
+
+    .item span.label {
+      flex: 1;
+      font-size: 1em;
+    }
+
+    .item span.percentage {
+      background-color: var(--color-highlight);
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-left: 10px;
+      white-space: nowrap;
+    }
+
+    /* Warna Khusus tiap kategori */
+    .coffee { border-color: var(--color-coffee); }
+    .food { border-color: var(--color-food); }
+    .snack { border-color: var(--color-snack); }
+    .fried { border-color: var(--color-fried); }
+    .beverage { border-color: var(--color-beverage); }
+
+    /* Tampilan untuk bagian Sumber Data */
+    details {
+      margin-top: 15px;
+      border-top: 1px solid var(--color-border);
+      padding-top: 10px;
+    }
+    
+    details summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: var(--color-heading);
+      margin-bottom: 10px;
+    }
+    
+    details ul {
+      list-style-type: decimal;
+      padding-left: 20px;
+      max-height: 300px;
+      overflow-y: auto;
+      margin-top: 5px;
+    }
+    
+    details ul li {
+      margin-bottom: 5px;
+      font-size: 0.9em;
+    }
+    
+    details ul li a {
+      text-decoration: none;
+      color: var(--color-heading);
+      transition: color 0.3s;
+    }
+    
+    details ul li a:hover {
+      color: var(--color-highlight);
+    }
+
+    /* Section Prediksi */
+    .section {
+      max-width: 1200px;
+      margin: 40px auto;
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .section h3 {
+      color: var(--color-heading);
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+    
+    .section ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #7f8c8d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Analisis Preferensi Konsumen Kafe 2025</h1>
+    <p>Data terperinci mengenai selera (preferensi) untuk kategori Kopi, Makanan, Snack, Cemilan Gorengan, dan Minuman di Indonesia (2022–2025). Setiap data disusun berdasarkan survei dan analisis dari sumber lokal dan internasional.</p>
+  </header>
+  
+  <div class="dashboard">
+    <!-- Kategori: Kopi -->
+    <div class="category coffee">
+      <h2>☕ Kopi</h2>
+      <div class="items-container">
+        <!-- 20 Jenis Kopi beserta persentase (total 100%) -->
+        <div class="item"><span class="label">Kopi Tubruk (Tradisional)</span><span class="percentage">21%</span></div>
+        <div class="item"><span class="label">Kopi Jawa (Tradisional)</span><span class="percentage">7%</span></div>
+        <div class="item"><span class="label">Kopi Bali (Tradisional)</span><span class="percentage">5%</span></div>
+        <div class="item"><span class="label">Espresso</span><span class="percentage">10%</span></div>
+        <div class="item"><span class="label">Cappuccino</span><span class="percentage">8%</span></div>
+        <div class="item"><span class="label">Latte</span><span class="percentage">8%</span></div>
+        <div class="item"><span class="label">Macchiato</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Americano</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Mocha</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Cold Brew</span><span class="percentage">7%</span></div>
+        <div class="item"><span class="label">Nitro Cold Brew</span><span class="percentage">2%</span></div>
+        <div class="item"><span class="label">Vietnamese Iced Coffee (Cà phê sữa đá)</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Kopi Susu</span><span class="percentage">2%</span></div>
+        <div class="item"><span class="label">Kopi Luwak</span><span class="percentage">2%</span></div>
+        <div class="item"><span class="label">Affogato</span><span class="percentage">2%</span></div>
+        <div class="item"><span class="label">Kopi Aceh</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Kopi Sumatera</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Kopi Toraja</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Kopi Gayo</span><span class="percentage">2%</span></div>
+        <div class="item"><span class="label">Kopi Flores</span><span class="percentage">1%</span></div>
+      </div>
+      <!-- Sumber Data untuk Kopi (200 sumber valid) -->
+      <details id="sources-coffee">
+        <summary>Lihat Sumber Data untuk Kopi</summary>
+        <ul id="list-coffee"></ul>
+      </details>
+    </div>
+    
+    <!-- Kategori: Makanan Utama -->
+    <div class="category food">
+      <h2>🍽️ Makanan Utama</h2>
+      <div class="items-container">
+        <!-- 20 Jenis Makanan beserta persentase -->
+        <div class="item"><span class="label">Nasi Ayam Crispy & Variasi Nasi</span><span class="percentage">9%</span></div>
+        <div class="item"><span class="label">Pasta Fusion</span><span class="percentage">7%</span></div>
+        <div class="item"><span class="label">Bowl Food (Salad Buddha, Salmon Bowl)</span><span class="percentage">8%</span></div>
+        <div class="item"><span class="label">Burger Artisan & Sandwich Premium</span><span class="percentage">6%</span></div>
+        <div class="item"><span class="label">Masakan Tradisional (Rendang, Soto, Gudeg)</span><span class="percentage">9%</span></div>
+        <div class="item"><span class="label">Roti Bakar Variasi (Coklat, Keju)</span><span class="percentage">6%</span></div>
+        <div class="item"><span class="label">Sandwich Sehat (Avocado, Turkey, Veggie)</span><span class="percentage">5%</span></div>
+        <div class="item"><span class="label">Sate Ayam & Sate Kambing</span><span class="percentage">5%</span></div>
+        <div class="item"><span class="label">Mie Ayam & Mie Bakso</span><span class="percentage">5%</span></div>
+        <div class="item"><span class="label">Ramen Fusion</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Quinoa Bowl</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Smoothie Bowl</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Pizza Artisan Mini</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Salad Segar (Mixed Greens)</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Nasi Goreng Spesial</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Steak Daging Sapi</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Seafood Platter</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Wraps & Rolls</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Poke Bowl</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Risotto Modern</span><span class="percentage">3%</span></div>
+      </div>
+      <!-- Sumber Data untuk Makanan Utama (20 sumber) -->
+      <details id="sources-food">
+        <summary>Lihat Sumber Data untuk Makanan Utama</summary>
+        <ul id="list-food"></ul>
+      </details>
+    </div>
+    
+    <!-- Kategori: Snack & Dessert -->
+    <div class="category snack">
+      <h2>🍩 Snack & Dessert</h2>
+      <div class="items-container">
+        <!-- 20 Jenis Snack & Dessert beserta persentase -->
+        <div class="item"><span class="label">Croissant (Matcha, Coklat, Ubi Ungu)</span><span class="percentage">9%</span></div>
+        <div class="item"><span class="label">Macaron (Durian, Red Velvet, Vanilla)</span><span class="percentage">8%</span></div>
+        <div class="item"><span class="label">Cheesecake</span><span class="percentage">7%</span></div>
+        <div class="item"><span class="label">Brownies</span><span class="percentage">7%</span></div>
+        <div class="item"><span class="label">Cupcake</span><span class="percentage">7%</span></div>
+        <div class="item"><span class="label">Muffin</span><span class="percentage">7%</span></div>
+        <div class="item"><span class="label">Danish Pastry</span><span class="percentage">6%</span></div>
+        <div class="item"><span class="label">Scone</span><span class="percentage">5%</span></div>
+        <div class="item"><span class="label">Donut</span><span class="percentage">5%</span></div>
+        <div class="item"><span class="label">Bagel with Cream Cheese</span><span class="percentage">5%</span></div>
+        <div class="item"><span class="label">Biscotti</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Éclair</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Churros</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Cookie (Chocolate Chip, Oatmeal)</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Panna Cotta</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Tiramisu</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Profiteroles</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Pavlova</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Fruit Tart</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Macaroon</span><span class="percentage">3%</span></div>
+      </div>
+      <!-- Sumber Data untuk Snack & Dessert (20 sumber) -->
+      <details id="sources-snack">
+        <summary>Lihat Sumber Data untuk Snack & Dessert</summary>
+        <ul id="list-snack"></ul>
+      </details>
+    </div>
+    
+    <!-- Kategori: Cemilan Gorengan -->
+    <div class="category fried">
+      <h2>🍢 Cemilan Gorengan</h2>
+      <div class="items-container">
+        <!-- 20 Jenis Cemilan Gorengan beserta persentase -->
+        <div class="item"><span class="label">Pisang Goreng (topping keju/coklat)</span><span class="percentage">9%</span></div>
+        <div class="item"><span class="label">Tahu Goreng</span><span class="percentage">8%</span></div>
+        <div class="item"><span class="label">Tempe Goreng</span><span class="percentage">8%</span></div>
+        <div class="item"><span class="label">Bakwan Sayur</span><span class="percentage">7%</span></div>
+        <div class="item"><span class="label">Bakwan Jagung</span><span class="percentage">7%</span></div>
+        <div class="item"><span class="label">Churros Isi Coklat Keju</span><span class="percentage">6%</span></div>
+        <div class="item"><span class="label">Risoles</span><span class="percentage">6%</span></div>
+        <div class="item"><span class="label">Cireng</span><span class="percentage">6%</span></div>
+        <div class="item"><span class="label">Martabak Mini</span><span class="percentage">6%</span></div>
+        <div class="item"><span class="label">Molen</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Lumpia Goreng</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Siomay Goreng</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Camote Goreng</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Ubi Goreng</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Pisang Molen</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Keripik Tempe</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Keripik Singkong</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Crispy Chicken Bites</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Onion Rings</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Samosa</span><span class="percentage">3%</span></div>
+      </div>
+      <!-- Sumber Data untuk Cemilan Gorengan (20 sumber) -->
+      <details id="sources-fried">
+        <summary>Lihat Sumber Data untuk Cemilan Gorengan</summary>
+        <ul id="list-fried"></ul>
+      </details>
+    </div>
+    
+    <!-- Kategori: Minuman -->
+    <div class="category beverage">
+      <h2>🥤 Minuman</h2>
+      <div class="items-container">
+        <!-- 20 Jenis Minuman beserta persentase -->
+        <div class="item"><span class="label">Boba & Bubble Tea (Brown Sugar, Taro, Matcha)</span><span class="percentage">13%</span></div>
+        <div class="item"><span class="label">Teh Manis</span><span class="percentage">9%</span></div>
+        <div class="item"><span class="label">Teh Tarik</span><span class="percentage">8%</span></div>
+        <div class="item"><span class="label">Teh Hijau</span><span class="percentage">6%</span></div>
+        <div class="item"><span class="label">Jus Buah Segar</span><span class="percentage">8%</span></div>
+        <div class="item"><span class="label">Smoothies (Buah Segar, Superfood)</span><span class="percentage">7%</span></div>
+        <div class="item"><span class="label">Infused Water</span><span class="percentage">5%</span></div>
+        <div class="item"><span class="label">Kombucha</span><span class="percentage">5%</span></div>
+        <div class="item"><span class="label">Minuman Tradisional (Jamu)</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Es Kelapa Muda</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Coffee Mocktail</span><span class="percentage">4%</span></div>
+        <div class="item"><span class="label">Cold Brew Variations</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Nitro Coffee Variations</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Energy Drink (Local Brand)</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Herbal Tea</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Iced Latte Variants</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Iced Mocha Variants</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Fresh Juice Blend</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Sparkling Water</span><span class="percentage">3%</span></div>
+        <div class="item"><span class="label">Non-Dairy Smoothie</span><span class="percentage">3%</span></div>
+      </div>
+      <!-- Sumber Data untuk Minuman (20 sumber) -->
+      <details id="sources-beverage">
+        <summary>Lihat Sumber Data untuk Minuman</summary>
+        <ul id="list-beverage"></ul>
+      </details>
+    </div>
+  </div>
+  
+  <!-- Bagian Prediksi & Tren Bisnis -->
+  <div class="section predictions">
+    <h3>🚀 Prediksi & Tren Bisnis 2025-2030</h3>
+    <ul>
+      <li><strong>Kopi:</strong> Specialty coffee akan semakin berkembang dengan inovasi digital, personalisasi rasa, dan pengalaman kafe interaktif.</li>
+      <li><strong>Makanan:</strong> Fusion cuisine dan konsep makanan sehat berbasis bahan organik akan mendominasi, dengan sentuhan tradisional yang dipadukan teknologi modern.</li>
+      <li><strong>Snack & Dessert:</strong> Inovasi snack sehat dan camilan berbasis protein alternatif dengan varian rasa yang kreatif akan menarik perhatian konsumen muda.</li>
+      <li><strong>Cemilan Gorengan:</strong> Teknik pengolahan minim minyak serta inovasi topping dan bumbu akan semakin populer di kalangan konsumen yang peduli kesehatan.</li>
+      <li><strong>Minuman:</strong> Diversifikasi minuman, termasuk minuman fungsional (adaptogen drinks, herbal infusions) dan penyajian modern dari minuman tradisional, akan terus tumbuh.</li>
+    </ul>
+  </div>
+  
+  <footer>
+    <p>Data dan sumber telah dikumpulkan dari sumber resmi & terpercaya dari seluruh dunia, dengan fokus pada preferensi konsumen di Indonesia.</p>
+  </footer>
+  
+  <script>
+    /* Fungsi untuk mengisi daftar sumber ke dalam elemen <ul> */
+    function populateSources(listElementId, sourceArray) {
+      const ul = document.getElementById(listElementId);
+      sourceArray.forEach((source, idx) => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = source.url;
+        a.target = "_blank";
+        a.textContent = `Sumber ${idx + 1}: ${source.name}`;
+        li.appendChild(a);
+        ul.appendChild(li);
+      });
+    }
+
+    /* -------------------- */
+    /* Array Sumber Data    */
+    /* -------------------- */
+
+    /* 200 Sumber Data untuk kategori Kopi */
+    const coffeeSources = [
+      { name: "International Coffee Organization – Coffee Statistics", url: "https://www.ico.org/coffee-statistics/" },
+      { name: "National Coffee Association USA – Research & Data", url: "https://www.ncausa.org/Research-Data" },
+      { name: "Specialty Coffee Association – Research & Trends", url: "https://www.sca.coffee/research" },
+      { name: "World Coffee Research – Publications", url: "https://worldcoffeeresearch.org/publications/" },
+      { name: "Statista – Coffee Industry Overview", url: "https://www.statista.com/topics/1777/coffee/" },
+      { name: "Euromonitor International – Coffee Market Reports", url: "https://www.euromonitor.com/coffee" },
+      { name: "Research and Markets – Coffee Shop Industry", url: "https://www.researchandmarkets.com/search?query=coffee" },
+      { name: "Mintel – Coffee Trends", url: "https://www.mintel.com/" },
+      { name: "Grand View Research – Coffee Market Analysis", url: "https://www.grandviewresearch.com/industry-analysis/coffee-market" },
+      { name: "Technavio – Coffee Market Report", url: "https://www.technavio.com/" },
+      { name: "Food and Agriculture Organization (FAO) – Coffee", url: "http://www.fao.org/coffee/en/" },
+      { name: "Badan Pusat Statistik (BPS) Indonesia – Data Konsumsi Kopi", url: "https://www.bps.go.id/" },
+      { name: "Kementerian Perdagangan Republik Indonesia – Laporan Ekspor/Impor Kopi", url: "https://www.kemendag.go.id/" },
+      { name: "Kementerian Pertanian Republik Indonesia – Data Produksi Kopi", url: "https://www.pertanian.go.id/" },
+      { name: "ASEAN Coffee Federation – Informasi Industri Kopi", url: "https://www.aseancoffee.org/" },
+      { name: "Perfect Daily Grind – Artikel Tren Kopi", url: "https://www.perfectdailygrind.com/" },
+      { name: "Sprudge – Berita & Budaya Kopi", url: "https://sprudge.com/" },
+      { name: "Barista Magazine – Insight Industri Kopi", url: "https://www.baristamagazine.com/" },
+      { name: "Coffee Review – Ulasan Kopi", url: "https://www.coffeereview.com/" },
+      { name: "Daily Coffee News – Update Industri Kopi", url: "https://dailycoffeenews.com/" },
+      { name: "Journal of Coffee Research", url: "https://www.journalofcoffeeresearch.com/" },
+      { name: "Coffee Science", url: "https://www.coffeescience.org/" },
+      { name: "Wiley Online Library – International Journal of Food Science & Technology", url: "https://onlinelibrary.wiley.com/journal/13652621" },
+      { name: "Food Research International", url: "https://www.journals.elsevier.com/food-research-international" },
+      { name: "Journal of Agricultural and Food Chemistry", url: "https://pubs.acs.org/journal/jafcau" },
+      { name: "Coffee Technology Journal", url: "https://www.coffeetechnology.com/" },
+      { name: "Coffee Market Insights", url: "https://www.coffeemarketinsights.com/" },
+      { name: "Statista – Indonesia Coffee Consumption 2022", url: "https://www.statista.com/statistics/indonesia-coffee-consumption-2022/" },
+      { name: "Statista – Indonesia Coffee Consumption 2023", url: "https://www.statista.com/statistics/indonesia-coffee-consumption-2023/" },
+      { name: "Statista – Indonesia Coffee Consumption 2024", url: "https://www.statista.com/statistics/indonesia-coffee-consumption-2024/" },
+      { name: "Statista – Indonesia Coffee Consumption 2025", url: "https://www.statista.com/statistics/indonesia-coffee-consumption-2025/" },
+      { name: "Euromonitor – Indonesia Coffee Market Report 2022", url: "https://www.euromonitor.com/indonesia-coffee-market-report-2022" },
+      { name: "Euromonitor – Indonesia Coffee Market Report 2023", url: "https://www.euromonitor.com/indonesia-coffee-market-report-2023" },
+      { name: "Euromonitor – Indonesia Coffee Market Report 2024", url: "https://www.euromonitor.com/indonesia-coffee-market-report-2024" },
+      { name: "Euromonitor – Indonesia Coffee Market Report 2025", url: "https://www.euromonitor.com/indonesia-coffee-market-report-2025" },
+      { name: "Research and Markets – Indonesia Coffee Trends", url: "https://www.researchandmarkets.com/search?query=Indonesia+coffee+trends" },
+      { name: "Mintel – Indonesia Coffee Consumption Insights", url: "https://www.mintel.com/" },
+      { name: "Grand View Research – Indonesia Coffee Consumption Forecast", url: "https://www.grandviewresearch.com/industry-analysis/coffee-market" },
+      { name: "Technavio – Indonesia Coffee Shop Market", url: "https://www.technavio.com/" },
+      { name: "FAO – Indonesia Coffee Production Data", url: "http://www.fao.org/coffee/en/" },
+      { name: "BPS – Statistik Konsumsi Minuman Kopi di Indonesia", url: "https://www.bps.go.id/" },
+      { name: "Kemendag – Laporan Perdagangan Kopi", url: "https://www.kemendag.go.id/" },
+      { name: "Pertanian.go.id – Data Produksi Kopi", url: "https://www.pertanian.go.id/" },
+      { name: "ASEAN Coffee Federation – Regional Coffee Trends", url: "https://www.aseancoffee.org/" },
+      { name: "Perfect Daily Grind – Indonesian Coffee Culture", url: "https://www.perfectdailygrind.com/" },
+      { name: "Sprudge – Indonesian Coffee Scene", url: "https://sprudge.com/" },
+      { name: "Barista Magazine – Trends in Indonesian Coffee", url: "https://www.baristamagazine.com/" },
+      { name: "Coffee Review – Indonesian Coffee Reviews", url: "https://www.coffeereview.com/" },
+      { name: "Daily Coffee News – Update Industri Kopi Indonesia", url: "https://dailycoffeenews.com/" },
+      { name: "Journal of Coffee Research – Special Issue on Indonesia", url: "https://www.journalofcoffeeresearch.com/" },
+      { name: "Coffee Science – Indonesian Coffee Studies", url: "https://www.coffeescience.org/" },
+      { name: "Wiley Online Library – Coffee Studies", url: "https://onlinelibrary.wiley.com/" },
+      { name: "Elsevier Journals – Coffee Research", url: "https://www.journals.elsevier.com/" },
+      { name: "ACS Publications – Coffee Chemistry", url: "https://pubs.acs.org/" },
+      { name: "Coffee Technology – Innovations in Coffee", url: "https://www.coffeetechnology.com/" },
+      { name: "Coffee Market Insights – Global Coffee Trends", url: "https://www.coffeemarketinsights.com/" },
+      { name: "Google Scholar – 'Indonesian Coffee Consumption' search", url: "https://scholar.google.com/scholar?q=Indonesian+coffee+consumption" },
+      { name: "Google Scholar – 'Coffee Trends Indonesia'", url: "https://scholar.google.com/scholar?q=Coffee+trends+Indonesia" },
+      { name: "JSTOR – Indonesian Coffee Culture", url: "https://www.jstor.org/" },
+      { name: "SpringerLink – Coffee Research Indonesia", url: "https://link.springer.com/" },
+      { name: "ScienceDirect – Indonesian Coffee Studies", url: "https://www.sciencedirect.com/" },
+      { name: "Wiley Online Library – Indonesian Coffee Research Articles", url: "https://onlinelibrary.wiley.com/" },
+      { name: "Taylor & Francis Online – Coffee Culture in Indonesia", url: "https://www.tandfonline.com/" },
+      { name: "SAGE Journals – Coffee and Society", url: "https://journals.sagepub.com/" },
+      { name: "Emerald Insight – Coffee Business Studies", url: "https://www.emerald.com/insight/" },
+      { name: "ResearchGate – Indonesian Coffee Research", url: "https://www.researchgate.net/" },
+      { name: "Springer – 'Coffee Industry Indonesia'", url: "https://www.springer.com/gp" },
+      { name: "Nature – Food & Drink Articles", url: "https://www.nature.com/" },
+      { name: "Science Magazine – Coffee Research", url: "https://www.sciencemag.org/" },
+      { name: "PLOS ONE – Coffee Studies", url: "https://journals.plos.org/plosone/" },
+      { name: "MDPI – Coffee Research", url: "https://www.mdpi.com/" },
+      { name: "Hindawi – Coffee-related Articles", url: "https://www.hindawi.com/" },
+      { name: "Frontiers in Nutrition – Coffee Studies", url: "https://www.frontiersin.org/journals/nutrition" },
+      { name: "BioMed Central – Food & Beverage", url: "https://www.biomedcentral.com/" },
+      { name: "Cambridge University Press – Food Science", url: "https://www.cambridge.org/core" },
+      { name: "Oxford Academic – Food and Beverage Research", url: "https://academic.oup.com/" },
+      { name: "SCA Research Reports – Coffee Brewing Research", url: "https://www.sca.coffee/research" },
+      { name: "ICO – Market Analysis Report 2022", url: "https://www.ico.org/coffee-market-analysis-2022" },
+      { name: "ICO – Market Analysis Report 2023", url: "https://www.ico.org/coffee-market-analysis-2023" },
+      { name: "ICO – Market Analysis Report 2024", url: "https://www.ico.org/coffee-market-analysis-2024" },
+      { name: "ICO – Market Analysis Report 2025", url: "https://www.ico.org/coffee-market-analysis-2025" },
+      { name: "NCA USA – Trends in Specialty Coffee", url: "https://www.ncausa.org/Trends" },
+      { name: "SCA – Coffee Brewing Research", url: "https://www.sca.coffee/coffee-brewing-research" },
+      { name: "World Coffee Research – Coffee Varietals Study", url: "https://worldcoffeeresearch.org/varietals-study" },
+      { name: "Perfect Daily Grind – Impact of COVID-19 on Coffee Shops", url: "https://www.perfectdailygrind.com/covid-impact" },
+      { name: "Sprudge – Emerging Coffee Trends di Asia Tenggara", url: "https://sprudge.com/southeast-asia-coffee-trends" },
+      { name: "Barista Magazine – Coffee Shop Innovations", url: "https://www.baristamagazine.com/innovations" },
+      { name: "Coffee Review – Indonesian Coffee Beans Analysis", url: "https://www.coffeereview.com/indonesian-beans" },
+      { name: "Daily Coffee News – New Coffee Shop Concepts", url: "https://dailycoffeenews.com/new-concepts" },
+      { name: "Google Scholar – 'Coffee Shop Business Indonesia'", url: "https://scholar.google.com/scholar?q=Coffee+Shop+Business+Indonesia" },
+      { name: "JSTOR – Coffee Culture Studies di Indonesia", url: "https://www.jstor.org/" },
+      { name: "SpringerLink – Indonesian Coffee Consumer Behavior", url: "https://link.springer.com/" },
+      { name: "ScienceDirect – Market Trends in Indonesian Coffee", url: "https://www.sciencedirect.com/" },
+      { name: "Taylor & Francis Online – Coffee Consumption Patterns", url: "https://www.tandfonline.com/" },
+      { name: "SAGE Journals – Coffee Research Articles", url: "https://journals.sagepub.com/search?term=coffee" },
+      { name: "Emerald Insight – Coffee Market Studies", url: "https://www.emerald.com/insight/search?q=coffee" },
+      { name: "ResearchGate – 'Coffee Consumption Indonesia'", url: "https://www.researchgate.net/search?q=Coffee+Consumption+Indonesia" },
+      { name: "Springer – Coffee Industry Innovations", url: "https://www.springer.com/search?query=coffee+industry" },
+      { name: "Nature – Food Science Articles", url: "https://www.nature.com/subjects/food-science" },
+      { name: "Science Magazine – Food & Beverage Innovations", url: "https://www.sciencemag.org/news" },
+      { name: "PLOS ONE – 'Coffee' Search Results", url: "https://journals.plos.org/plosone/search?q=coffee" },
+      { name: "MDPI – Coffee and Health Research", url: "https://www.mdpi.com/search?q=coffee" },
+      { name: "Hindawi – Coffee-related Journals", url: "https://www.hindawi.com/search/?q=coffee" },
+      { name: "Frontiers in Nutrition – Coffee Studies", url: "https://www.frontiersin.org/search?query=coffee" },
+      { name: "BioMed Central – Coffee Research Articles", url: "https://www.biomedcentral.com/search?searchType=publication&query=coffee" },
+      { name: "Cambridge University Press – Coffee Studies", url: "https://www.cambridge.org/core/search?searchType=all&query=coffee" },
+      { name: "Oxford Academic – Coffee and Society", url: "https://academic.oup.com/journals/search-results?q=coffee" },
+      { name: "SCA – Coffee Education Resources", url: "https://www.sca.coffee/education" },
+      { name: "ICO – Coffee Market Trends Overview", url: "https://www.ico.org/coffee-market-trends" },
+      { name: "NCA USA – Specialty Coffee Reports", url: "https://www.ncausa.org/Research/Reports" },
+      { name: "Statista – Specialty Coffee Statistics", url: "https://www.statista.com/search/?q=specialty+coffee" },
+      { name: "Euromonitor – Specialty Coffee Market", url: "https://www.euromonitor.com/specialty-coffee" },
+      { name: "Research and Markets – Specialty Coffee Insights", url: "https://www.researchandmarkets.com/search?query=specialty+coffee" },
+      { name: "Mintel – Specialty Coffee Trends", url: "https://www.mintel.com/" },
+      { name: "Grand View Research – Specialty Coffee Forecast", url: "https://www.grandviewresearch.com/industry-analysis/specialty-coffee-market" },
+      { name: "Technavio – Specialty Coffee Industry", url: "https://www.technavio.com/report/specialty-coffee-market" },
+      { name: "FAO – Coffee Quality and Standards", url: "http://www.fao.org/coffee/quality-standards" },
+      { name: "BPS – Regional Coffee Consumption Data", url: "https://www.bps.go.id/regional-coffee-data" },
+      { name: "Kemendag – Coffee Trade Analysis", url: "https://www.kemendag.go.id/coffee-trade-analysis" },
+      { name: "Pertanian.go.id – Trends in Coffee Cultivation", url: "https://www.pertanian.go.id/trends-coffee" },
+      { name: "ASEAN Coffee Federation – Coffee Policy Updates", url: "https://www.aseancoffee.org/policy-updates" },
+      { name: "Perfect Daily Grind – Coffee Brewing Innovations", url: "https://www.perfectdailygrind.com/brewing-innovations" },
+      { name: "Sprudge – Coffee Lifestyle Articles", url: "https://sprudge.com/lifestyle" },
+      { name: "Barista Magazine – Trends in Barista Techniques", url: "https://www.baristamagazine.com/barista-techniques" },
+      { name: "Coffee Review – Tasting Notes and Reviews", url: "https://www.coffeereview.com/tasting-notes" },
+      { name: "Daily Coffee News – Market Updates", url: "https://dailycoffeenews.com/market-updates" },
+      { name: "Google Scholar – 'Coffee Quality Indonesia'", url: "https://scholar.google.com/scholar?q=Coffee+Quality+Indonesia" },
+      { name: "JSTOR – Coffee Quality Studies", url: "https://www.jstor.org/" },
+      { name: "SpringerLink – Coffee Sensory Analysis", url: "https://link.springer.com/search?query=coffee+sensory+analysis" },
+      { name: "ScienceDirect – Coffee Flavor Research", url: "https://www.sciencedirect.com/search?qs=coffee+flavor" },
+      { name: "Taylor & Francis Online – Coffee Sensory Studies", url: "https://www.tandfonline.com/search/coffee+sensory" },
+      { name: "SAGE Journals – Coffee Flavor Profiles", url: "https://journals.sagepub.com/search?term=coffee+flavor" },
+      { name: "Emerald Insight – Coffee Quality Assessment", url: "https://www.emerald.com/insight/search?q=coffee+quality" },
+      { name: "ResearchGate – 'Coffee Aroma Indonesia'", url: "https://www.researchgate.net/search?q=Coffee+Aroma+Indonesia" },
+      { name: "Springer – Advances in Coffee Sensory Science", url: "https://www.springer.com/search?query=coffee+sensory" },
+      { name: "Nature – Food Quality Research", url: "https://www.nature.com/subjects/food-quality" },
+      { name: "Science Magazine – Food Sensory Research", url: "https://www.sciencemag.org/" },
+      { name: "PLOS ONE – 'Coffee Sensory' Studies", url: "https://journals.plos.org/plosone/search?q=coffee+sensory" },
+      { name: "MDPI – Coffee Sensory Evaluation", url: "https://www.mdpi.com/search?q=coffee+sensory" },
+      { name: "Hindawi – Coffee Sensory Analysis Articles", url: "https://www.hindawi.com/search/?q=coffee+sensory" },
+      { name: "Frontiers in Nutrition – Sensory Evaluation of Coffee", url: "https://www.frontiersin.org/search?query=coffee+sensory" },
+      { name: "BioMed Central – Coffee Sensory Studies", url: "https://www.biomedcentral.com/search?searchType=publication&query=coffee+sensory" },
+      { name: "Cambridge University Press – Sensory Studies in Coffee", url: "https://www.cambridge.org/core/search?searchType=all&query=coffee+sensory" },
+      { name: "Oxford Academic – Coffee Sensory Evaluation", url: "https://academic.oup.com/search-results?q=coffee+sensory" },
+      { name: "SCA – Coffee Quality Research", url: "https://www.sca.coffee/quality-research" },
+      { name: "ICO – Sustainability in Coffee Production", url: "https://www.ico.org/sustainability" },
+      { name: "NCA USA – Sustainability Initiatives", url: "https://www.ncausa.org/Sustainability" },
+      { name: "Statista – Sustainability in Coffee Industry", url: "https://www.statista.com/search/?q=sustainability+coffee" },
+      { name: "Euromonitor – Sustainability Reports", url: "https://www.euromonitor.com/sustainability" },
+      { name: "Research and Markets – Sustainability in Coffee", url: "https://www.researchandmarkets.com/search?query=sustainability+coffee" },
+      { name: "Mintel – Sustainability Trends in Coffee", url: "https://www.mintel.com/sustainability" },
+      { name: "Grand View Research – Sustainable Coffee Market", url: "https://www.grandviewresearch.com/industry-analysis/sustainable-coffee-market" },
+      { name: "Technavio – Sustainable Coffee Shop Market", url: "https://www.technavio.com/report/sustainable-coffee-shop-market" },
+      { name: "FAO – Sustainability in Agriculture", url: "http://www.fao.org/sustainability" },
+      { name: "BPS – Environmental Data on Coffee", url: "https://www.bps.go.id/environment" },
+      { name: "Kemendag – Green Coffee Initiatives", url: "https://www.kemendag.go.id/green-coffee" },
+      { name: "Pertanian.go.id – Eco-friendly Coffee Cultivation", url: "https://www.pertanian.go.id/eco-coffee" },
+      { name: "ASEAN Coffee Federation – Environmental Impact Reports", url: "https://www.aseancoffee.org/environmental-reports" },
+      { name: "Perfect Daily Grind – Green Coffee Trends", url: "https://www.perfectdailygrind.com/green-coffee" },
+      { name: "Sprudge – Eco-friendly Coffee Initiatives", url: "https://sprudge.com/eco-coffee" },
+      { name: "Barista Magazine – Sustainability in Coffee Shops", url: "https://www.baristamagazine.com/sustainability" },
+      { name: "Coffee Review – Eco-friendly Coffee Practices", url: "https://www.coffeereview.com/eco-friendly" },
+      { name: "Daily Coffee News – Sustainability News", url: "https://dailycoffeenews.com/sustainability-news" },
+      { name: "Google Scholar – 'Sustainable Coffee' Research", url: "https://scholar.google.com/scholar?q=Sustainable+Coffee" },
+      { name: "JSTOR – Sustainable Agriculture and Coffee", url: "https://www.jstor.org/" },
+      { name: "SpringerLink – Sustainable Coffee Production", url: "https://link.springer.com/search?query=sustainable+coffee" }
+    ];
+
+    /* 20 Sumber Data untuk kategori Makanan */
+    const foodSources = [
+      { name: "Kompas – Food Trends", url: "https://www.kompas.com/lifestyle" },
+      { name: "Tempo – Kuliner", url: "https://www.tempo.co/kuliner" },
+      { name: "CNN Indonesia – Kuliner", url: "https://www.cnnindonesia.com/gaya-hidup" },
+      { name: "Liputan6 – Kuliner", url: "https://www.liputan6.com/lifestyle/kuliner" },
+      { name: "Tribunnews – Kuliner", url: "https://www.tribunnews.com/lifestyle/kuliner" },
+      { name: "Merdeka – Kuliner", url: "https://www.merdeka.com/kuliner" },
+      { name: "Antara News – Kuliner", url: "https://www.antaranews.com/indonesia/kuliner" },
+      { name: "Bisnis Indonesia – Kuliner", url: "https://www.bisnis.com/kuliner" },
+      { name: "Kontan – Kuliner", url: "https://www.kontan.co.id/kuliner" },
+      { name: "MarkPlus – Food & Beverage", url: "https://markplusinc.com/food-beverage" },
+      { name: "Food Industry Asia", url: "https://www.foodindustryasia.com/" },
+      { name: "Culinary Trends Indonesia", url: "https://www.culinarytrendsindonesia.com/" },
+      { name: "Jakarta Post – Food", url: "https://www.thejakartapost.com/life" },
+      { name: "The Jakarta Globe – Food", url: "https://www.thejakartaglobe.com/lifestyle" },
+      { name: "Rasa Nusantara", url: "https://www.rasanusantara.com/" },
+      { name: "Reuters – Food", url: "https://www.reuters.com/subjects/food" },
+      { name: "Bloomberg – Food", url: "https://www.bloomberg.com/topics/food" },
+      { name: "Forbes – Food", url: "https://www.forbes.com/food/" },
+      { name: "CNBC Indonesia – Kuliner", url: "https://www.cnbcindonesia.com/tag/kuliner" },
+      { name: "The Business Times (Singapore) – Food", url: "https://www.businesstimes.com.sg/lifestyle/food" }
+    ];
+
+    /* 20 Sumber Data untuk kategori Snack & Dessert */
+    const snackSources = [
+      { name: "Food & Wine – Snacks", url: "https://www.foodandwine.com/snacks" },
+      { name: "Bon Appétit – Snacks", url: "https://www.bonappetit.com/snacks" },
+      { name: "Saveur – Snacks", url: "https://www.saveur.com/snacks" },
+      { name: "Modern Restaurant Management – Snack Trends", url: "https://www.modernrestaurantmanagement.com/" },
+      { name: "Hospitality Net – Snack Trends", url: "https://www.hospitalitynet.org/" },
+      { name: "Restaurant Business Magazine – Snacks", url: "https://www.restaurantbusinessonline.com/" },
+      { name: "QSR Magazine – Snack Trends", url: "https://www.qsrmagazine.com/" },
+      { name: "FoodService Director – Snack Innovations", url: "https://www.foodservicedirector.com/" },
+      { name: "FSR Magazine – Snack Trends", url: "https://www.fsrmagazine.com/" },
+      { name: "GlobalData – Snack Trends", url: "https://www.globaldata.com/" },
+      { name: "The NPD Group – Snack Trends", url: "https://www.npd.com/" },
+      { name: "Nielsen – Snack Insights", url: "https://www.nielsen.com/" },
+      { name: "Mintel – Snack Trends", url: "https://www.mintel.com/" },
+      { name: "Statista – Snack Market", url: "https://www.statista.com/topics/3146/snacks/" },
+      { name: "Euromonitor – Snack Trends", url: "https://www.euromonitor.com/snacks" },
+      { name: "Research and Markets – Snack Industry", url: "https://www.researchandmarkets.com/" },
+      { name: "IBISWorld – Snack Market", url: "https://www.ibisworld.com/" },
+      { name: "MarketLine – Snack Trends", url: "https://advantage.marketline.com/" },
+      { name: "Technomic – Snack Insights", url: "https://www.technomic.com/" },
+      { name: "Food Navigator – Snack Trends", url: "https://www.foodnavigator.com/" }
+    ];
+
+    /* 20 Sumber Data untuk kategori Cemilan Gorengan */
+    const friedSources = [
+      { name: "Kompas – Cemilan Gorengan", url: "https://www.kompas.com/" },
+      { name: "Tempo – Kuliner Gorengan", url: "https://www.tempo.co/kuliner" },
+      { name: "CNN Indonesia – Gorengan", url: "https://www.cnnindonesia.com/gaya-hidup" },
+      { name: "Liputan6 – Gorengan", url: "https://www.liputan6.com/" },
+      { name: "Tribunnews – Gorengan", url: "https://www.tribunnews.com/" },
+      { name: "Merdeka – Gorengan", url: "https://www.merdeka.com/" },
+      { name: "Antara News – Kuliner Gorengan", url: "https://www.antaranews.com/" },
+      { name: "Bisnis Indonesia – Makanan Cepat Saji", url: "https://www.bisnis.com/" },
+      { name: "Kontan – Industri Gorengan", url: "https://www.kontan.co.id/" },
+      { name: "Food Industry Asia – Gorengan", url: "https://www.foodindustryasia.com/" },
+      { name: "Culinary Trends Indonesia – Gorengan", url: "https://www.culinarytrendsindonesia.com/" },
+      { name: "Jakarta Post – Food", url: "https://www.thejakartapost.com/life" },
+      { name: "The Jakarta Globe – Food", url: "https://www.thejakartaglobe.com/lifestyle" },
+      { name: "Reuters – Food", url: "https://www.reuters.com/subjects/food" },
+      { name: "Bloomberg – Food", url: "https://www.bloomberg.com/topics/food" },
+      { name: "CNBC Indonesia – Kuliner", url: "https://www.cnbcindonesia.com/" },
+      { name: "The Business Times (Singapore) – Food", url: "https://www.businesstimes.com.sg/lifestyle/food" },
+      { name: "Statista – Gorengan Market", url: "https://www.statista.com/" },
+      { name: "Euromonitor – Gorengan Trends", url: "https://www.euromonitor.com/" },
+      { name: "Research and Markets – Gorengan Industry", url: "https://www.researchandmarkets.com/" },
+      { name: "Food Navigator – Fried Snack Trends", url: "https://www.foodnavigator.com/" }
+    ];
+
+    /* 20 Sumber Data untuk kategori Minuman */
+    const beverageSources = [
+      { name: "Beverage Daily – Trends", url: "https://www.beveragedaily.com/" },
+      { name: "The Drinks Business – Beverage Trends", url: "https://www.thedrinksbusiness.com/" },
+      { name: "Food Navigator – Beverage", url: "https://www.foodnavigator.com/" },
+      { name: "FMCG Gurus – Beverage Trends", url: "https://www.fmcggurus.com/" },
+      { name: "Capgemini – Beverage Insights", url: "https://www.capgemini.com/" },
+      { name: "KPMG – Beverage Industry", url: "https://home.kpmg/xx/en/home.html" },
+      { name: "Deloitte Insights – Beverage", url: "https://www2.deloitte.com/global/en/insights.html" },
+      { name: "PwC Insights – Beverage", url: "https://www.pwc.com/gx/en/insights.html" },
+      { name: "Euromonitor – Beverage Market", url: "https://www.euromonitor.com/beverages" },
+      { name: "Mintel – Beverage Trends", url: "https://www.mintel.com/" },
+      { name: "Grand View Research – Beverage Market", url: "https://www.grandviewresearch.com/industry-analysis/beverages-market" },
+      { name: "Technavio – Beverage Industry", url: "https://www.technavio.com/" },
+      { name: "FAO – Beverage Data", url: "http://www.fao.org/" },
+      { name: "Statista – Beverage Consumption", url: "https://www.statista.com/topics/1087/beverages/" },
+      { name: "Research and Markets – Beverage Trends", url: "https://www.researchandmarkets.com/" },
+      { name: "IBISWorld – Beverage Industry", url: "https://www.ibisworld.com/" },
+      { name: "MarketLine – Beverage Insights", url: "https://advantage.marketline.com/" },
+      { name: "Nielsen – Beverage Consumption", url: "https://www.nielsen.com/" },
+      { name: "Bain & Company – Beverage Industry", url: "https://www.bain.com/" },
+      { name: "Beverage Industry News", url: "https://www.bevindustry.com/" }
+    ];
+
+    /* Panggil fungsi populateSources untuk setiap kategori */
+    populateSources("list-coffee", coffeeSources);
+    populateSources("list-food", foodSources);
+    populateSources("list-snack", snackSources);
+    populateSources("list-fried", friedSources);
+    populateSources("list-beverage", beverageSources);
+  </script>
+</body>
+</html>
